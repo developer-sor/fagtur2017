@@ -1,0 +1,35 @@
+.todo:hover {
+  margin: 30px 0 10px 0;
+  -webkit-box-shadow: 0 -5px 9px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0 -5px 9px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 0 -5px 9px 0 rgba(50, 50, 50, 0.75); }
+
+.todo {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 20px;
+  width: 100%;
+  min-height: 250px;
+  margin: 20px 0;
+  border: 1px solid #a89d62;
+  background-color: #ffee96;
+  border-top-color: #fffe96;
+  border-left-color: #ffde96;
+  font-family: cursive;
+  font-weight: bold;
+  -webkit-box-shadow: 0 0 9px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0 0 9px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 0 0 9px 0 rgba(50, 50, 50, 0.75); }
+
+.todoDone {
+  text-decoration: line-through;
+  background-color: #ccc;
+  border: 1px solid #a8a8a5;
+  background-color: #eae4ea;
+  border-top-color: #fffefd;
+  border-left-color: #fff9ff; }
+
+.noListStyle {
+  list-style: none; }
+
+/*# sourceMappingURL=main.css.map */
