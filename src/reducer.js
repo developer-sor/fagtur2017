@@ -22,7 +22,6 @@ export default function (state = init, action) {
             let loginform = state.get(loginForm);
             console.log('Loginform as JSON:', loginform.toJSON());
             alert(JSON.stringify(loginform.toJSON()));
-            //Do ajaxcall?
             return state;
         default:
             return state;
