@@ -18,11 +18,6 @@ export default function (state = init, action) {
             }));
         case 'UPDATE_LOGIN':
             return state.setIn([loginForm, action.payload.name], action.payload.value);
-        case 'SUBMIT_LOGIN':
-            let loginform = state.get(loginForm);
-            console.log('Loginform as JSON:', loginform.toJSON());
-            alert(JSON.stringify(loginform.toJSON()));
-            return state;
         default:
             return state;
     }

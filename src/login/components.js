@@ -1,7 +1,7 @@
 import React from 'react';
 
 export function Login(props) {
-    const {state, submitLogin, updateLoginForm} = props;
+    const {loginform, updateLoginForm} = props;
 
     const updateFormData = (event) => {
         const target = event.target;
@@ -10,9 +10,12 @@ export function Login(props) {
 
         updateLoginForm(name, value);
     };
+
     const submitForm = (event) => {
         event.preventDefault();
-        submitLogin();
+
+        console.log('Loginform as JSON:', loginform.toJSON());
+        alert(JSON.stringify(loginform.toJSON()));
     };
 
     return (
@@ -28,7 +31,7 @@ export function Login(props) {
                                    placeholder="din epost (brukernavn)"
                                    onBlur={updateFormData}
                                    autoFocus="true"
-                                   autoComplete="true"
+                                   autoComplete="false"
                                    required/>
                         </label>
                         <label>
@@ -37,9 +40,10 @@ export function Login(props) {
                                    name="passord"
                                    placeholder="passord"
                                    onBlur={updateFormData}
+                                   autoComplete="false"
                                    required/>
                         </label>
-                        <input type="submit" value="send" className="button" onClick={submitForm}/>
+                        <input type="submit" value="send" className="button"/>
                     </fieldset>
                 </form>
             </div>
